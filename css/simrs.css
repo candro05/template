@@ -1,0 +1,28 @@
+#Pasien_Baru .modal-dialog{
+	width: 90%;
+	padding: 0;
+	top:0px;
+	left:0px;
+}
+
+.modal-content {
+  height: 99%;
+}
+.modal-body {
+  height: 75%;
+}
+
+.bootbox-body{
+	font-size:14px;
+}
+.modal.fade {
+  left: -25%;
+  -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+     -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+       -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+          transition: opacity 0.3s linear, left 0.3s ease-out;
+}
+
+.modal.fade.in {
+  left: 1%;
+}

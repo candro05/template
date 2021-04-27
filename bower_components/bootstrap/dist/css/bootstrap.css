@@ -5405,10 +5405,12 @@ button.close {
   overflow-y: auto;
 }
 .modal-dialog {
-  position: relative;
-  width: auto;
-  margin: 10px;
+  width: 90%;
+  padding: 0;
+  top:0px;
+  left:0px;
 }
+
 .modal-content {
   position: relative;
   background-color: #fff;
@@ -5478,9 +5480,18 @@ button.close {
 }
 @media (min-width: 768px) {
   .modal-dialog {
-    width: 600px;
-    margin: 30px auto;
+    width: 90%;
+    padding: 0;
+    top:0px;
+    left:0px;
   }
+  #Pasien_Baru .modal-dialog{
+    width: 90%;
+    padding: 0;
+    top:0px;
+    left:0px;
+  }
+
   .modal-content {
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
             box-shadow: 0 5px 15px rgba(0, 0, 0, .5);

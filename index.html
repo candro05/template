@@ -21,6 +21,7 @@
     <link href='css/elfinder.theme.css' rel='stylesheet'>
     <link href='css/jquery.iphone.toggle.css' rel='stylesheet'>
     <link href='css/uploadify.css' rel='stylesheet'>
+    <link href='css/simrs.css' rel='stylesheet'>
     <link href='css/animate.min.css' rel='stylesheet'>
     <script src="bower_components/jquery/jquery.min.js"></script>
     <link rel="shortcut icon" href="img/favicon.ico">
@@ -131,7 +132,7 @@
         <!--/  AWAL ISI KONTEN -->
         <div class=" row">
             <div class="col-md-3 col-sm-3 col-xs-6">
-                <a data-toggle="tooltip" title="Tambah Data Pasien Baru" class="well top-block" href="#">
+                <a data-toggle="tooltip" title="Tambah Data Pasien Baru" class="well top-block" href="javascript:Pasien_Baru()">
                     <i class="glyphicon glyphicon-user blue"></i>
 
                     <div>PENDATARAN PASIEN</div>
@@ -230,8 +231,185 @@
             <!--/  AKHIR ISI KONTEN -->
         </div>
 </div>
+<div class="modal fade" id="Pasien_Baru" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
 
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                 <h4>Form Registrasi Pasien</h4>
+            </div>
+            <div class="modal-body">
+               <div class="row">
+                <div class="box col-md-8" >
+                    <div class="box-inner">
+                        <div class="form-group has-error col-md-3">
+                            <label class="control-label">NIK</label>
+                            <input type="text" class="form-control" id="inputSuccess1">
+                        </div>
+                        <div class="form-group has-error col-md-5">
+                            <label class="control-label">Nama Lengkap</label>
+                            <input type="text" class="form-control" id="inputWarning1">
+                        </div>
+                        <div class="form-group has-error col-md-4">
+                            <label class="control-label">Nama Alias</label>
+                            <input type="text" class="form-control" id="inputError1">
+                        </div>
 
+                        <div class="form-group has-error col-md-4">
+                            <label class="control-label">Tempat Lahir</label>
+                            <input type="text" class="form-control" id="inputSuccess1">
+                        </div>
+                        <div class="form-group has-error col-md-3">
+                            <label class="control-label">Tgl. Lahir</label>
+                            <input type="text" class="form-control" id="inputWarning1">
+                        </div>
+                        <div class="form-group has-error col-md-3">
+                            <label class="control-label">Jenis Kelamin</label>
+                            <input type="text" class="form-control" id="inputError1">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label class="control-label">Umur</label>
+                            <input type="text" Readonly class="form-control" id="inputError1">
+                        </div>
+                    </div>
+                </div>
+                <div class="box col-md-4" >
+                    <div class="box-inner">
+                        <img height="150px" width="120px" src="img/image.png" class="img-thumbnail" alt="">
+                         <div class="form-group col-md-8">
+                            <label class="control-label">Image</label>
+                            <input type="file" class="form-control" id="inputSuccess1">
+                        </div>
+                    </div>
+                </div>
+                <div class="box col-md-8">
+                    <div class="box-inner">
+                        <div class="form-group has-error col-md-4">
+                            <label class="control-label">Alamat</label>
+                            <input type="text" class="form-control" id="inputSuccess1">
+                        </div>
+                        <div class="form-group has-error col-md-4">
+                            <label class="control-label">Provinsi</label>
+                            <input type="text" class="form-control" id="inputWarning1">
+                        </div>
+                        <div class="form-group has-error col-md-4">
+                            <label class="control-label">Kota / Kabupaten</label>
+                            <input type="text" class="form-control" id="inputError1">
+                        </div>
+                    </div>
+                </div>
+                <div class="box col-md-8">
+                    <div class="box-inner">
+                        <div class="form-group has-error col-md-4">
+                            <label class="control-label">Kecamatan</label>
+                            <input type="text" class="form-control" id="inputSuccess1">
+                        </div>
+                        <div class="form-group has-error col-md-4">
+                            <label class="control-label">Kelurahan</label>
+                            <input type="text" class="form-control" id="inputWarning1">
+                        </div>
+                        <div class="form-group has-error col-md-2">
+                            <label class="control-label">Kode POS</label>
+                            <input type="text" class="form-control" id="inputError1">
+                        </div>
+                        <div class="form-group col-md-1">
+                            <label class="control-label">RT</label>
+                            <input type="text" class="form-control" id="inputError1">
+                        </div>
+                        <div class="form-group col-md-1">
+                            <label class="control-label">RW</label>
+                            <input type="text" class="form-control" id="inputError1">
+                        </div>
+                    </div>
+                </div>
+                <div class="box col-md-12">
+                    <div class="box-inner">
+                        <div class="form-group has-error col-md-2">
+                            <label class="control-label">Telepon</label>
+                            <input type="text" class="form-control" id="inputSuccess1">
+                        </div>
+                        <div class="form-group has-error col-md-2">
+                            <label class="control-label">No. HP</label>
+                            <input type="text" class="form-control" id="inputWarning1">
+                        </div>
+                        <div class="form-group has-error col-md-2">
+                            <label class="control-label">Agama</label>
+                            <input type="text" class="form-control" id="inputError1">
+                        </div>
+                        <div class="form-group has-error col-md-1">
+                            <label class="control-label">G.Darah</label>
+                            <input type="text" class="form-control" id="inputError1">
+                        </div>
+                    </div>
+                </div>
+                <div class="box col-md-12">
+                    <div class="box-inner">
+                        <div class="form-group has-error col-md-2">
+                            <label class="control-label">Suku</label>
+                            <input type="text" class="form-control" id="inputSuccess1">
+                        </div>
+                        <div class="form-group has-error col-md-2">
+                            <label class="control-label">Bahasa</label>
+                            <input type="text" class="form-control" id="inputWarning1">
+                        </div>
+                        <div class="form-group has-error col-md-2">
+                            <label class="control-label">Status</label>
+                            <input type="text" class="form-control" id="inputError1">
+                        </div>
+                        <div class="form-group has-error col-md-2">
+                            <label class="control-label">Pendidikan</label>
+                            <input type="text" class="form-control" id="inputError1">
+                        </div>
+                    </div>
+                </div>
+                <div class="box col-md-12">
+                    <div class="box-inner">
+                        <div class="form-group col-md-2">
+                            <label class="control-label">E-Mail</label>
+                            <input type="text" class="form-control" id="inputError1">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label class="control-label">Pekerjaan</label>
+                            <input type="text" class="form-control" id="inputError1">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label class="control-label">Nama Suami / Istri</label>
+                            <input type="text" class="form-control" id="inputSuccess1">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label class="control-label">Nama Ibu Kandung</label>
+                            <input type="text" class="form-control" id="inputWarning1">
+                        </div>
+                    </div>
+                </div>
+                 <div class="box col-md-12">
+                    <div class="box-inner">
+                        <div class="form-group col-md-4">
+                            <label class="control-label">Penanggung Jawab</label>
+                            <input type="text" class="form-control" id="inputError1">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label class="control-label">No.BPJS</label>
+                            <input type="text" class="form-control" id="inputError1">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label class="control-label">NO. KJS</label>
+                            <input type="text" class="form-control" id="inputSuccess1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn btn-default" data-dismiss="modal">Close</a>
+                <a href="#" class="btn btn-primary" data-dismiss="modal">Save changes</a>
+            </div>
+        </div>
+    </div>
+</div>
 <hr>
 <hr>
 <footer class="row">
@@ -257,6 +435,6 @@
 <script src="js/jquery.uploadify-3.1.min.js"></script>
 <script src="js/jquery.history.js"></script>
 <script src="js/charisma.js"></script>
-
+<script src="js/simrs.js"></script>
 </body>
 </html>
