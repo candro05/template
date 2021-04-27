@@ -585,5 +585,11 @@ var catMS=['Sebelum Makan','Sesudah Makan'];
     function Pasien_Baru(){
 			$('#Pasien_Baru').modal('show');
 	}
+	function Pasien_IGD(){
+			$('#Pasien_IGD').modal('show');
+	}
+	function Pasien_POLI(){
+		$('#Pasien_IGD').modal('show');
+	}
 
 	

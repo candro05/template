@@ -30,7 +30,6 @@
 <body>
     <!-- topbar starts -->
     <div class="navbar navbar-default" role="navigation">
-
         <div class="navbar-inner">
             <button type="button" class="navbar-toggle pull-left animated flip">
                 <span class="sr-only">Toggle navigation</span>
@@ -130,290 +129,586 @@
         </ul>
     </div>
         <!--/  AWAL ISI KONTEN -->
-        <div class=" row">
-            <div class="col-md-3 col-sm-3 col-xs-6">
-                <a data-toggle="tooltip" title="Tambah Data Pasien Baru" class="well top-block" href="javascript:Pasien_Baru()">
-                    <i class="glyphicon glyphicon-user blue"></i>
+    <div class=" row">
+        <div class="col-md-3 col-sm-3 col-xs-6">
+            <a data-toggle="tooltip" title="Tambah Data Pasien Baru" class="well top-block" href="javascript:Pasien_Baru()">
+                <i class="glyphicon glyphicon-user blue"></i>
 
-                    <div>PENDATARAN PASIEN</div>
-                    <div>BARU</div>
-                </a>
-            </div>
-
-            <div class="col-md-3 col-sm-3 col-xs-6">
-                <a data-toggle="tooltip" title=" Pendaftaran Pasien IGD" class="well top-block" href="#">
-                    <i class="glyphicon glyphicon-star green"></i>
-                    <div>PENDATARAN PASIEN</div>
-                    <div>IGD</div>
-                </a>
-            </div>
-
-            <div class="col-md-3 col-sm-3 col-xs-6">
-                <a data-toggle="tooltip" title="Pendaftaran Pasien Poliklinik" class="well top-block" href="#">
-                    <i class="glyphicon glyphicon-star yellow"></i>
-                    <div>PENDATARAN PASIEN</div>
-                    <div>POLIKLINIK</div>
-                </a>
-            </div>
-
-            <div class="col-md-3 col-sm-3 col-xs-6">
-                <a data-toggle="tooltip" title="Pendaftaran Pasien Rawat Inap" class="well top-block" href="#">
-                    <i class="glyphicon glyphicon-star red"></i>
-                    <div>PENDATARAN PASIEN</div>
-                    <div>RAWAT INAP</div>
-                </a>
-            </div>
+                <div>PENDATARAN PASIEN</div>
+                <div>BARU</div>
+            </a>
         </div>
 
-        <div class="row">
-            <div class="box col-md-12">
-            <div class="box-inner">
-            <div class="box-header well" data-original-title="">
-                <div class="box-icon">
-                    <a href="#" class="btn btn-setting btn-round btn-default"><i class="glyphicon glyphicon-cog"></i></a>
-                    <a href="#" class="btn btn-minimize btn-round btn-default"><i
-                            class="glyphicon glyphicon-chevron-up"></i></a>
-                    <a href="#" class="btn btn-close btn-round btn-default"><i class="glyphicon glyphicon-remove"></i></a>
-                </div>
-            </div>
-            <div class="box-content">
-            <div class="alert alert-info">Data Lengkap Pasien </div>
-            <table class="table table-striped table-bordered bootstrap-datatable datatable responsive">
-            <thead>
-            <tr>
-                <th>Rekam Medis</th>
-                <th>Nama Lengkap</th>
-                <th>Tgl. Lahir</th>
-                <th>No. Telp</th>
-                <th>No. BPJS</th>
-                <th>No. KTP</th>
-                <th>Actions</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>000000</td>
-                <td class="center">Chandro Sihotang</td>
-                <td class="center">05.01.1994</td>
-                <td class="center">082165845250</td>
-                 <td class="center">000125410214</td>
-                  <td class="center">11010201014444003</td>
-                <td class="center">
-                    <a class="btn btn-success" href="#">
-                        <i class="glyphicon glyphicon-zoom-in icon-white"></i>
-                        Detail
-                    </a>
-                </td>
-            </tr>
-             <tr>
-                <td>000001</td>
-                <td class="center">Meiman Berkat Jaya Gea</td>
-                <td class="center">15.04.1994</td>
-                <td class="center">082165845250</td>
-                 <td class="center">000125410214</td>
-                  <td class="center">11010201014444003</td>
-                <td class="center">
-                    <a class="btn btn-success" href="#">
-                        <i class="glyphicon glyphicon-zoom-in icon-white"></i>
-                        Detail
-                    </a>
-                </td>
-            </tr>
-            </tbody>
-            </table>
-            </div>
-            </div>
-            </div>
-            <!--/span-->
-
-            </div><!--/row-->
-
-            <!--/  AKHIR ISI KONTEN -->
+        <div class="col-md-3 col-sm-3 col-xs-6">
+            <a data-toggle="tooltip" title=" Pendaftaran Pasien IGD" class="well top-block" href="javascript:Pasien_IGD()">
+                <i class="glyphicon glyphicon-star green"></i>
+                <div>PENDATARAN PASIEN</div>
+                <div>IGD</div>
+            </a>
         </div>
+
+        <div class="col-md-3 col-sm-3 col-xs-6">
+            <a data-toggle="tooltip" title="Pendaftaran Pasien Poliklinik" class="well top-block" href="javascript:Pasien_POLI()">
+                <i class="glyphicon glyphicon-star yellow"></i>
+                <div>PENDATARAN PASIEN</div>
+                <div>POLIKLINIK</div>
+            </a>
+        </div>
+
+        <div class="col-md-3 col-sm-3 col-xs-6">
+            <a data-toggle="tooltip" title="Pendaftaran Pasien Rawat Inap" class="well top-block" href="#">
+                <i class="glyphicon glyphicon-star red"></i>
+                <div>PENDATARAN PASIEN</div>
+                <div>RAWAT INAP</div>
+            </a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="box col-md-12">
+        <div class="box-inner">
+        <div class="box-header well" data-original-title="">
+            <div class="box-icon">
+                <a href="#" class="btn btn-setting btn-round btn-default"><i class="glyphicon glyphicon-cog"></i></a>
+                <a href="#" class="btn btn-minimize btn-round btn-default"><i
+                        class="glyphicon glyphicon-chevron-up"></i></a>
+                <a href="#" class="btn btn-close btn-round btn-default"><i class="glyphicon glyphicon-remove"></i></a>
+            </div>
+        </div>
+        <div class="box-content">
+        <div class="alert alert-info">Data Lengkap Pasien </div>
+        <table class="table table-striped table-bordered bootstrap-datatable datatable responsive">
+        <thead>
+        <tr>
+            <th>Rekam Medis</th>
+            <th>Nama Lengkap</th>
+            <th>Tgl. Lahir</th>
+            <th>No. Telp</th>
+            <th>No. BPJS</th>
+            <th>No. KTP</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>000000</td>
+            <td class="center">Chandro Sihotang</td>
+            <td class="center">05.01.1994</td>
+            <td class="center">082165845250</td>
+                <td class="center">000125410214</td>
+                <td class="center">11010201014444003</td>
+            <td class="center">
+                <a class="btn btn-success" href="#">
+                    <i class="glyphicon glyphicon-zoom-in icon-white"></i>
+                    Detail
+                </a>
+            </td>
+        </tr>
+            <tr>
+            <td>000001</td>
+            <td class="center">Meiman Berkat Jaya Gea</td>
+            <td class="center">15.04.1994</td>
+            <td class="center">082165845250</td>
+                <td class="center">000125410214</td>
+                <td class="center">11010201014444003</td>
+            <td class="center">
+                <a class="btn btn-success" href="#">
+                    <i class="glyphicon glyphicon-zoom-in icon-white"></i>
+                    Detail
+                </a>
+            </td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        </div>
+        </div>
+        <!--/span-->
+
+        </div><!--/row-->
+
+        <!--/  AKHIR ISI KONTEN -->
+    </div>
 </div>
-<div class="modal fade" id="Pasien_Baru" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-        aria-hidden="true">
+    <div class="modal fade" id="Pasien_Baru" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h4>Form Registrasi Pasien</h4>
+                </div>
+                <div class="modal-body">
+                <div class="row">
+                    <div class="box col-md-8" >
+                        <div class="box-inner">
+                            <div class="form-group has-error col-md-3">
+                                <label class="control-label">NIK</label>
+                                <input type="text" class="form-control" id="inputSuccess1">
+                            </div>
+                            <div class="form-group has-error col-md-5">
+                                <label class="control-label">Nama Lengkap</label>
+                                <input type="text" class="form-control" id="inputWarning1">
+                            </div>
+                            <div class="form-group has-error col-md-4">
+                                <label class="control-label">Nama Alias</label>
+                                <input type="text" class="form-control" id="inputError1">
+                            </div>
 
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">×</button>
-                 <h4>Form Registrasi Pasien</h4>
-            </div>
-            <div class="modal-body">
-               <div class="row">
-                <div class="box col-md-8" >
-                    <div class="box-inner">
-                        <div class="form-group has-error col-md-3">
-                            <label class="control-label">NIK</label>
-                            <input type="text" class="form-control" id="inputSuccess1">
+                            <div class="form-group has-error col-md-4">
+                                <label class="control-label">Tempat Lahir</label>
+                                <input type="text" class="form-control" id="inputSuccess1">
+                            </div>
+                            <div class="form-group has-error col-md-3">
+                                <label class="control-label">Tgl. Lahir</label>
+                                <input type="text" class="form-control" id="inputWarning1">
+                            </div>
+                            <div class="form-group has-error col-md-3">
+                                <label class="control-label">Jenis Kelamin</label>
+                                <input type="text" class="form-control" id="inputError1">
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label class="control-label">Umur</label>
+                                <input type="text" Readonly class="form-control" id="inputError1">
+                            </div>
                         </div>
-                        <div class="form-group has-error col-md-5">
-                            <label class="control-label">Nama Lengkap</label>
-                            <input type="text" class="form-control" id="inputWarning1">
+                    </div>
+                    <div class="box col-md-4" >
+                        <div class="box-inner">
+                            <img height="150px" width="120px" src="img/image.png" class="img-thumbnail" alt="">
+                            <div class="form-group col-md-8">
+                                <label class="control-label">Image</label>
+                                <input type="file" class="form-control" id="inputSuccess1">
+                            </div>
                         </div>
-                        <div class="form-group has-error col-md-4">
-                            <label class="control-label">Nama Alias</label>
-                            <input type="text" class="form-control" id="inputError1">
+                    </div>
+                    <div class="box col-md-8">
+                        <div class="box-inner">
+                            <div class="form-group has-error col-md-4">
+                                <label class="control-label">Alamat</label>
+                                <input type="text" class="form-control" id="inputSuccess1">
+                            </div>
+                            <div class="form-group has-error col-md-4">
+                                <label class="control-label">Provinsi</label>
+                                <input type="text" class="form-control" id="inputWarning1">
+                            </div>
+                            <div class="form-group has-error col-md-4">
+                                <label class="control-label">Kota / Kabupaten</label>
+                                <input type="text" class="form-control" id="inputError1">
+                            </div>
                         </div>
-
-                        <div class="form-group has-error col-md-4">
-                            <label class="control-label">Tempat Lahir</label>
-                            <input type="text" class="form-control" id="inputSuccess1">
+                    </div>
+                    <div class="box col-md-8">
+                        <div class="box-inner">
+                            <div class="form-group has-error col-md-4">
+                                <label class="control-label">Kecamatan</label>
+                                <input type="text" class="form-control" id="inputSuccess1">
+                            </div>
+                            <div class="form-group has-error col-md-4">
+                                <label class="control-label">Kelurahan</label>
+                                <input type="text" class="form-control" id="inputWarning1">
+                            </div>
+                            <div class="form-group has-error col-md-2">
+                                <label class="control-label">Kode POS</label>
+                                <input type="text" class="form-control" id="inputError1">
+                            </div>
+                            <div class="form-group col-md-1">
+                                <label class="control-label">RT</label>
+                                <input type="text" class="form-control" id="inputError1">
+                            </div>
+                            <div class="form-group col-md-1">
+                                <label class="control-label">RW</label>
+                                <input type="text" class="form-control" id="inputError1">
+                            </div>
                         </div>
-                        <div class="form-group has-error col-md-3">
-                            <label class="control-label">Tgl. Lahir</label>
-                            <input type="text" class="form-control" id="inputWarning1">
+                    </div>
+                    <div class="box col-md-12">
+                        <div class="box-inner">
+                            <div class="form-group has-error col-md-2">
+                                <label class="control-label">Telepon</label>
+                                <input type="text" class="form-control" id="inputSuccess1">
+                            </div>
+                            <div class="form-group has-error col-md-2">
+                                <label class="control-label">No. HP</label>
+                                <input type="text" class="form-control" id="inputWarning1">
+                            </div>
+                            <div class="form-group has-error col-md-2">
+                                <label class="control-label">Agama</label>
+                                <input type="text" class="form-control" id="inputError1">
+                            </div>
+                            <div class="form-group has-error col-md-1">
+                                <label class="control-label">G.Darah</label>
+                                <input type="text" class="form-control" id="inputError1">
+                            </div>
                         </div>
-                        <div class="form-group has-error col-md-3">
-                            <label class="control-label">Jenis Kelamin</label>
-                            <input type="text" class="form-control" id="inputError1">
+                    </div>
+                    <div class="box col-md-12">
+                        <div class="box-inner">
+                            <div class="form-group has-error col-md-2">
+                                <label class="control-label">Suku</label>
+                                <input type="text" class="form-control" id="inputSuccess1">
+                            </div>
+                            <div class="form-group has-error col-md-2">
+                                <label class="control-label">Bahasa</label>
+                                <input type="text" class="form-control" id="inputWarning1">
+                            </div>
+                            <div class="form-group has-error col-md-2">
+                                <label class="control-label">Status</label>
+                                <input type="text" class="form-control" id="inputError1">
+                            </div>
+                            <div class="form-group has-error col-md-2">
+                                <label class="control-label">Pendidikan</label>
+                                <input type="text" class="form-control" id="inputError1">
+                            </div>
                         </div>
-                        <div class="form-group col-md-2">
-                            <label class="control-label">Umur</label>
-                            <input type="text" Readonly class="form-control" id="inputError1">
+                    </div>
+                    <div class="box col-md-12">
+                        <div class="box-inner">
+                            <div class="form-group col-md-2">
+                                <label class="control-label">E-Mail</label>
+                                <input type="text" class="form-control" id="inputError1">
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label class="control-label">Pekerjaan</label>
+                                <input type="text" class="form-control" id="inputError1">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label class="control-label">Nama Suami / Istri</label>
+                                <input type="text" class="form-control" id="inputSuccess1">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label class="control-label">Nama Ibu Kandung</label>
+                                <input type="text" class="form-control" id="inputWarning1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box col-md-12">
+                        <div class="box-inner">
+                            <div class="form-group col-md-4">
+                                <label class="control-label">Penanggung Jawab</label>
+                                <input type="text" class="form-control" id="inputError1">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label class="control-label">No.BPJS</label>
+                                <input type="text" class="form-control" id="inputError1">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label class="control-label">NO. KJS</label>
+                                <input type="text" class="form-control" id="inputSuccess1">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="box col-md-4" >
-                    <div class="box-inner">
-                        <img height="150px" width="120px" src="img/image.png" class="img-thumbnail" alt="">
-                         <div class="form-group col-md-8">
-                            <label class="control-label">Image</label>
-                            <input type="file" class="form-control" id="inputSuccess1">
-                        </div>
-                    </div>
                 </div>
-                <div class="box col-md-8">
-                    <div class="box-inner">
-                        <div class="form-group has-error col-md-4">
-                            <label class="control-label">Alamat</label>
-                            <input type="text" class="form-control" id="inputSuccess1">
-                        </div>
-                        <div class="form-group has-error col-md-4">
-                            <label class="control-label">Provinsi</label>
-                            <input type="text" class="form-control" id="inputWarning1">
-                        </div>
-                        <div class="form-group has-error col-md-4">
-                            <label class="control-label">Kota / Kabupaten</label>
-                            <input type="text" class="form-control" id="inputError1">
-                        </div>
-                    </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn btn-default" data-dismiss="modal">Close</a>
+                    <a href="#" class="btn btn-primary" data-dismiss="modal">Save changes</a>
                 </div>
-                <div class="box col-md-8">
-                    <div class="box-inner">
-                        <div class="form-group has-error col-md-4">
-                            <label class="control-label">Kecamatan</label>
-                            <input type="text" class="form-control" id="inputSuccess1">
-                        </div>
-                        <div class="form-group has-error col-md-4">
-                            <label class="control-label">Kelurahan</label>
-                            <input type="text" class="form-control" id="inputWarning1">
-                        </div>
-                        <div class="form-group has-error col-md-2">
-                            <label class="control-label">Kode POS</label>
-                            <input type="text" class="form-control" id="inputError1">
-                        </div>
-                        <div class="form-group col-md-1">
-                            <label class="control-label">RT</label>
-                            <input type="text" class="form-control" id="inputError1">
-                        </div>
-                        <div class="form-group col-md-1">
-                            <label class="control-label">RW</label>
-                            <input type="text" class="form-control" id="inputError1">
-                        </div>
-                    </div>
-                </div>
-                <div class="box col-md-12">
-                    <div class="box-inner">
-                        <div class="form-group has-error col-md-2">
-                            <label class="control-label">Telepon</label>
-                            <input type="text" class="form-control" id="inputSuccess1">
-                        </div>
-                        <div class="form-group has-error col-md-2">
-                            <label class="control-label">No. HP</label>
-                            <input type="text" class="form-control" id="inputWarning1">
-                        </div>
-                        <div class="form-group has-error col-md-2">
-                            <label class="control-label">Agama</label>
-                            <input type="text" class="form-control" id="inputError1">
-                        </div>
-                        <div class="form-group has-error col-md-1">
-                            <label class="control-label">G.Darah</label>
-                            <input type="text" class="form-control" id="inputError1">
-                        </div>
-                    </div>
-                </div>
-                <div class="box col-md-12">
-                    <div class="box-inner">
-                        <div class="form-group has-error col-md-2">
-                            <label class="control-label">Suku</label>
-                            <input type="text" class="form-control" id="inputSuccess1">
-                        </div>
-                        <div class="form-group has-error col-md-2">
-                            <label class="control-label">Bahasa</label>
-                            <input type="text" class="form-control" id="inputWarning1">
-                        </div>
-                        <div class="form-group has-error col-md-2">
-                            <label class="control-label">Status</label>
-                            <input type="text" class="form-control" id="inputError1">
-                        </div>
-                        <div class="form-group has-error col-md-2">
-                            <label class="control-label">Pendidikan</label>
-                            <input type="text" class="form-control" id="inputError1">
-                        </div>
-                    </div>
-                </div>
-                <div class="box col-md-12">
-                    <div class="box-inner">
-                        <div class="form-group col-md-2">
-                            <label class="control-label">E-Mail</label>
-                            <input type="text" class="form-control" id="inputError1">
-                        </div>
-                        <div class="form-group col-md-2">
-                            <label class="control-label">Pekerjaan</label>
-                            <input type="text" class="form-control" id="inputError1">
-                        </div>
-                        <div class="form-group col-md-4">
-                            <label class="control-label">Nama Suami / Istri</label>
-                            <input type="text" class="form-control" id="inputSuccess1">
-                        </div>
-                        <div class="form-group col-md-4">
-                            <label class="control-label">Nama Ibu Kandung</label>
-                            <input type="text" class="form-control" id="inputWarning1">
-                        </div>
-                    </div>
-                </div>
-                 <div class="box col-md-12">
-                    <div class="box-inner">
-                        <div class="form-group col-md-4">
-                            <label class="control-label">Penanggung Jawab</label>
-                            <input type="text" class="form-control" id="inputError1">
-                        </div>
-                        <div class="form-group col-md-3">
-                            <label class="control-label">No.BPJS</label>
-                            <input type="text" class="form-control" id="inputError1">
-                        </div>
-                        <div class="form-group col-md-3">
-                            <label class="control-label">NO. KJS</label>
-                            <input type="text" class="form-control" id="inputSuccess1">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            </div>
-            <div class="modal-footer">
-                <a href="#" class="btn btn-default" data-dismiss="modal">Close</a>
-                <a href="#" class="btn btn-primary" data-dismiss="modal">Save changes</a>
             </div>
         </div>
     </div>
-</div>
-<hr>
+    <hr>
+    <div class="modal fade" id="Pasien_IGD" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h4>Form Registrasi IGD</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <form class="form-inline" role="form">
+                            <div class="form-group has-success has-feedback">
+                                <label class="control-label" for="inputSuccess4">Rekam Medis</label>
+                                <input type="text" class="form-control" id="inputSuccess4">
+                            </div>
+                            <button type="submit" class="btn btn-default">Cari Pasien</button>
+                        </form>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="box col-md-12">
+                            <div class="box-inner">
+                                <div class="box-header well" data-original-title="">
+                                    <h2>Identitas Pasien</h2>
+                                        <div class="box-icon">
+                                            <a href="#" class="btn btn-minimize btn-round btn-default"><i
+                                                    class="glyphicon glyphicon-chevron-up"></i></a>
+                                        </div>
+                                </div>
+                                <div class="box-content">
+                                    <table class="table table-bordered table-striped table-condensed">
+                                        <thead>
+                                        <tr>
+                                            <th>NIK</th>
+                                            <th>Rekammedis</th>
+                                            <th>Nama Lengkap</th>
+                                            <th>Tgl. Lahir</th>
+                                            <th>No. HP</th>
+                                            <th>Alamat</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>11120122140500008</td>
+                                            <td class="center">000002</td>
+                                            <td class="center">Candro Sihotang</td>
+                                            <td class="center">05.01.1994</td>
+                                            <td class="center">082165845250</td>
+                                            <td class="center">Jln. Medan Percut Pasar 6 Sampali</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>     
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--/span-->
+                    <hr>
+                    <div class="row">
+                        <div class="box col-md-6">
+                            <div class="box-inner">
+                                <div class="box-header well" data-original-title="">
+                                    <h2><i class="glyphicon glyphicon-edit"></i> Data Transaksi</h2>
+                                    <div class="box-icon">
+                                        <a href="#" class="btn btn-minimize btn-round btn-default"><i
+                                                class="glyphicon glyphicon-chevron-up"></i></a>
+                                    </div>
+                                </div>
+                                <div class="box-content">
+                                    <div class="input-group col-md-8">
+                                        <span class="input-group-addon">Pilih Provider  &nbsp;</span>
+                                        <div class="controls">
+                                            <select class="form-control" id="">
+                                                <option>BPJS KESEHATAN</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="input-group col-md-8">
+                                        <span class="input-group-addon">Pilih Poliklinik</span>
+                                        <div class="controls">
+                                            <select class="form-control" id="">
+                                                <option>IGD</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="input-group col-md-10">
+                                        <span class="input-group-addon">Pilih Dokter &nbsp;&nbsp;</span>
+                                        <div class="controls">
+                                            <select class="form-control" id="">
+                                                <option>RSU. WULAN WINDY</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="input-group col-md-10">
+                                        <span class="input-group-addon">Cara Datang &nbsp;</span>
+                                        <div class="controls">
+                                            <select class="form-control" id="">
+                                                <option>Datang Sendiri</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box col-md-6">
+                            <div class="box-inner">
+                                <div class="box-header well" data-original-title="">
+                                    <h2><i class="glyphicon glyphicon-edit"></i>Transaksi Terakhir</h2>
+                                    <div class="box-icon">
+                                        <a href="#" class="btn btn-minimize btn-round btn-default"><i
+                                                class="glyphicon glyphicon-chevron-up"></i></a>
+                                    </div>
+                                </div>
+                                <div class="box-content">
+                                    <table class="table table-bordered table-striped table-condensed">
+                                        <thead>
+                                        <tr>
+                                            <th>No. Daftar</th>
+                                            <th>Rekammedis</th>
+                                            <th>Tgl. Masuk</th>
+                                            <th>Tgl. Keluar</th>
+                                            <th>Dokter</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>121100120001</td>
+                                            <td class="center">000000</td>
+                                            <td class="center">20.03.2021</td>
+                                            <td class="center">20.03.2021</td>
+                                            <td class="center">dr. Asnawi Sp.PD</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>  
+                                </div>
+                            </div>
+                        </div>
+                    <!--/span-->
+                    </div><!--/row-->
+
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn btn-default" data-dismiss="modal">Close</a>
+                    <a href="#" class="btn btn-primary" data-dismiss="modal">Save changes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <hr>
+    <div class="modal fade" id="Pasien_POLI" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h4>Form Registrasi Poliklinik</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <form class="form-inline" role="form">
+                            <div class="form-group has-success has-feedback">
+                                <label class="control-label" for="inputSuccess4">Rekam Medis</label>
+                                <input type="text" class="form-control" id="inputSuccess4">
+                            </div>
+                            <button type="submit" class="btn btn-default">Cari Pasien</button>
+                        </form>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="box col-md-12">
+                            <div class="box-inner">
+                                <div class="box-header well" data-original-title="">
+                                    <h2>Identitas Pasien</h2>
+                                        <div class="box-icon">
+                                            <a href="#" class="btn btn-minimize btn-round btn-default"><i
+                                                    class="glyphicon glyphicon-chevron-up"></i></a>
+                                        </div>
+                                </div>
+                                <div class="box-content">
+                                    <table class="table table-bordered table-striped table-condensed">
+                                        <thead>
+                                        <tr>
+                                            <th>NIK</th>
+                                            <th>Rekammedis</th>
+                                            <th>Nama Lengkap</th>
+                                            <th>Tgl. Lahir</th>
+                                            <th>No. HP</th>
+                                            <th>Alamat</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>11120122140500008</td>
+                                            <td class="center">000002</td>
+                                            <td class="center">Candro Sihotang</td>
+                                            <td class="center">05.01.1994</td>
+                                            <td class="center">082165845250</td>
+                                            <td class="center">Jln. Medan Percut Pasar 6 Sampali</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>     
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--/span-->
+                    <hr>
+                    <div class="row">
+                        <div class="box col-md-6">
+                            <div class="box-inner">
+                                <div class="box-header well" data-original-title="">
+                                    <h2><i class="glyphicon glyphicon-edit"></i> Data Transaksi</h2>
+                                    <div class="box-icon">
+                                        <a href="#" class="btn btn-minimize btn-round btn-default"><i
+                                                class="glyphicon glyphicon-chevron-up"></i></a>
+                                    </div>
+                                </div>
+                                <div class="box-content">
+                                    <div class="input-group col-md-8">
+                                        <span class="input-group-addon">Pilih Provider  &nbsp;</span>
+                                        <div class="controls">
+                                            <select class="form-control" id="">
+                                                <option>BPJS KESEHATAN</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="input-group col-md-8">
+                                        <span class="input-group-addon">Pilih Poliklinik</span>
+                                        <div class="controls">
+                                            <select class="form-control" id="">
+                                                <option>IGD</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="input-group col-md-10">
+                                        <span class="input-group-addon">Pilih Dokter &nbsp;&nbsp;</span>
+                                        <div class="controls">
+                                            <select class="form-control" id="">
+                                                <option>RSU. WULAN WINDY</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="input-group col-md-10">
+                                        <span class="input-group-addon">Cara Datang &nbsp;</span>
+                                        <div class="controls">
+                                            <select class="form-control" id="">
+                                                <option>Datang Sendiri</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box col-md-6">
+                            <div class="box-inner">
+                                <div class="box-header well" data-original-title="">
+                                    <h2><i class="glyphicon glyphicon-edit"></i>Transaksi Terakhir</h2>
+                                    <div class="box-icon">
+                                        <a href="#" class="btn btn-minimize btn-round btn-default"><i
+                                                class="glyphicon glyphicon-chevron-up"></i></a>
+                                    </div>
+                                </div>
+                                <div class="box-content">
+                                    <table class="table table-bordered table-striped table-condensed">
+                                        <thead>
+                                        <tr>
+                                            <th>No. Daftar</th>
+                                            <th>Rekammedis</th>
+                                            <th>Tgl. Masuk</th>
+                                            <th>Tgl. Keluar</th>
+                                            <th>Dokter</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>121100120001</td>
+                                            <td class="center">000000</td>
+                                            <td class="center">20.03.2021</td>
+                                            <td class="center">20.03.2021</td>
+                                            <td class="center">dr. Asnawi Sp.PD</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>  
+                                </div>
+                            </div>
+                        </div>
+                    <!--/span-->
+                    </div><!--/row-->
+
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn btn-default" data-dismiss="modal">Close</a>
+                    <a href="#" class="btn btn-primary" data-dismiss="modal">Save changes</a>
+                </div>
+            </div>
+        </div>
+    </div>
 <hr>
 <footer class="row">
-    <p class="col-md-8 col-sm-8 col-xs-12 copyright">&copy; <a href="" target="_blank">Chandro Sihotang</a> 2020</p>
+    <p class="col-md-8 col-sm-8 col-xs-12 copyright">&copy; <a href="" target="_blank">Chandro Sihotang</a> 2021</p>
     <p class="col-md-3 col-sm-3 col-xs-12 powered-by">Powered by: <a
             href="">HOSPITAL SIMRS PRO</a></p>
 </footer>

@@ -4,7 +4,18 @@
 	top:0px;
 	left:0px;
 }
-
+#Pasien_IGD .modal-dialog{
+	width: 90%;
+	padding: 0;
+	top:0px;
+	left:0px;
+}
+#Pasien_POLI .modal-dialog{
+	width: 90%;
+	padding: 0;
+	top:0px;
+	left:0px;
+}
 .modal-content {
   height: 99%;
 }
